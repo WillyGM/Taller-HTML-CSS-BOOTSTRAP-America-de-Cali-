@@ -1,81 +1,119 @@
-/* Estilo global */
+
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #D70032; /* Rojo característico del América de Cali */
+  background-color: #D70032;
   color: white;
   margin: 0;
   padding: 0;
 }
 
-/* Header */
 .header {
-  background-color: #005B8D; /* Azul oscuro */
-  padding: 20px 0;
+  background-color: #005B8D;
+  padding: 40px 0;
   text-align: center;
 }
 
 .header h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   letter-spacing: 5px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .header img {
-  width: 200px;
+  width: 250px;
   height: auto;
+  margin-top: 20px;
+}
+
+.header p {
+  font-size: 1.2rem;
   margin-top: 10px;
 }
 
-/* Contenido */
-.content {
-  padding: 20px;
-  text-align: center;
+.row {
+  margin-top: 20px;
 }
 
-.content h2 {
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+h3 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-.content p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  text-align: justify;
-  padding: 10px 15px;
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 15px 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #F5F5F5;
+  font-size: 1.1rem;
+}
+
+ul li a:hover {
+  color: #FFDF00;
+}
+
+
+form {
+  max-width: 600px;
   margin: 0 auto;
-  max-width: 800px;
-}
-
-/* Tarjetas */
-.card {
-  margin: 20px 0;
-  background-color: #8C1C1C; /* Rojo más oscuro */
-  border-radius: 8px;
   padding: 20px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #333;
+  border-radius: 10px;
 }
 
-.card h3 {
-  font-size: 1.5rem;
-  color: #F5F5F5;
-  text-align: center;
+form label {
+  font-size: 1.2rem;
   margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 1rem;
   color: #F5F5F5;
-  text-align: justify;
 }
 
-/* Footer */
+form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px 40px;
+  background-color: #8F8F8F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+form button:hover {
+  background-color: #505050;
+}
+
+
 footer {
   background-color: #005B8D;
   color: white;
-  padding: 10px;
+  padding: 20px 0;
   text-align: center;
+  font-size: 1.1rem;
 }
 
 footer a {
@@ -85,10 +123,9 @@ footer a {
 }
 
 footer a:hover {
-  color: #FFDF00; /* Color dorado al pasar el cursor */
+  color: #FFDF00;
 }
 
-/* Estilo para enlaces */
 a {
   text-decoration: none;
   color: #FFDF00;
@@ -98,21 +135,34 @@ a:hover {
   color: #F5F5F5;
 }
 
-/* Estilos Responsivos */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 @media (max-width: 768px) {
   .header h1 {
     font-size: 2.5rem;
   }
 
-  .card {
-    padding: 15px;
+  .header img {
+    width: 200px;
   }
 
-  .content h2 {
-    font-size: 1.8rem;
+  h2 {
+    font-size: 2rem;
   }
 
-  .content p {
+  p {
+    font-size: 1rem;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  footer {
     font-size: 1rem;
   }
 }
